@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Computer Engineering Department | GEC Modasa</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+
+        .top-header {
+            background: #003366;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .college-logo {
+            width: 85px;
+            height: 85px;
+            object-fit: contain;
+            background: white;
+            border-radius: 50%;
+            padding: 4px;
+        }
+
+        .college-name {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .department-name {
+            font-size: 18px;
+        }
+
+        /* Navbar */
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        /* Carousel */
+
+        .carousel-item img {
+            height: 480px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.65);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Sections */
+
+        section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 45px;
+            color: #003366;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: #0d6efd;
+            margin: 12px auto;
+        }
+
+        /* Cards */
+
+        .custom-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+        }
+
+        .faculty-icon {
+            width: 80px;
+            height: 80px;
+            background: #e8f1ff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            font-size: 35px;
+        }
+
+        /* About */
+
+        .about-box {
+            background: #f5f8fc;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        /* Contact */
+
+        .contact-box {
+            background: #003366;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #212529;
+            color: white;
+            padding: 30px 0;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 768px) {
+
+            .college-name {
+                font-size: 20px;
+            }
+
+            .department-name {
+                font-size: 15px;
+            }
+
+            .college-logo {
+                width: 65px;
+                height: 65px;
+            }
+
+            .carousel-item img {
+                height: 300px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================================================= -->
+<!-- HEADER -->
+<!-- ================================================= -->
+
+<header class="top-header">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-auto">
+
+                <!-- Your uploaded GEC logo -->
+
+                <img src="logo.png"
+                     alt="GEC Modasa Logo"
+                     class="college-logo">
+
+            </div>
+
+            <div class="col">
+
+                <div class="college-name">
+                    Government Engineering College, Modasa
+                </div>
+
+                <div class="department-name">
+                    Department of Computer Engineering
+                </div>
+
+                <small>
+                    Shamlaji Road, Modasa, District Aravalli, Gujarat - 383315
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================================================= -->
+<!-- NAVIGATION BAR -->
+<!-- ================================================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            GEC Modasa
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#vision">
+                        Vision & Mission
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#faculty">
+                        Faculty
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#labs">
+                        Laboratories
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">
+                        Events
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================================================= -->
+<!-- CAROUSEL -->
+<!-- ================================================= -->
+
+<section id="home" class="p-0">
+
+    <div id="collegeCarousel"
+         class="carousel slide"
+         data-bs-ride="carousel">
+
+
+        <!-- Indicators -->
+
+        <div class="carousel-indicators">
+
+            <button type="button"
+                    data-bs-target="#collegeCarousel"
+                    data-bs-slide-to="0"
+                    class="active">
+            </button>
+
+            <button type="button"
+                    data-bs-target="#collegeCarousel"
+                    data-bs-slide-to="1">
+            </button>
+
+            <button type="button"
+                    data-bs-target="#collegeCarousel"
+                    data-bs-slide-to="2">
+            </button>
+
+        </div>
+
+
+        <!-- Carousel Images -->
+
+        <div class="carousel-inner">
+
+
+            <div class="carousel-item active">
+
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                     class="d-block w-100"
+                     alt="Computer Technology">
+
+                <div class="carousel-caption">
+
+                    <h1>
+                        Computer Engineering Department
+                    </h1>
+
+                    <p>
+                        Learn • Innovate • Develop
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                     class="d-block w-100"
+                     alt="Students">
+
+                <div class="carousel-caption">
+
+                    <h1>
+                        Government Engineering College, Modasa
+                    </h1>
+
+                    <p>
+                        Excellence in Technical Education
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998"
+                     class="d-block w-100"
+                     alt="Team Work">
+
+                <div class="carousel-caption">
+
+                    <h1>
+                        Innovation & Research
+                    </h1>
+
+                    <p>
+                        Building Future Technology Professionals
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Previous -->
+
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#collegeCarousel"
+                data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+
+        <!-- Next -->
+
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#collegeCarousel"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- ABOUT -->
+<!-- ================================================= -->
+
+<section id="about">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            About Department
+        </h2>
+
+        <div class="row align-items-center">
+
+            <div class="col-md-7">
+
+                <h3>
+                    Department of Computer Engineering
+                </h3>
+
+                <p>
+                    The Department of Computer Engineering at
+                    Government Engineering College, Modasa provides
+                    technical education in computer engineering,
+                    programming, software development, networking,
+                    databases and modern technologies.
+                </p>
+
+                <p>
+                    The department emphasizes theoretical knowledge,
+                    practical skills, problem solving, innovation and
+                    research to prepare students for higher education
+                    and professional careers.
+                </p>
+
+                <p>
+                    Government Engineering College, Modasa was
+                    established in 1984 under the Directorate of
+                    Technical Education, Gujarat State.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-5">
+
+                <div class="about-box">
+
+                    <h4>College Information</h4>
+
+                    <hr>
+
+                    <p>
+                        <strong>Established:</strong> 1984
+                    </p>
+
+                    <p>
+                        <strong>University:</strong>
+                        Gujarat Technological University
+                    </p>
+
+                    <p>
+                        <strong>Recognition:</strong> AICTE
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong>
+                        Modasa, Gujarat
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- VISION & MISSION -->
+<!-- ================================================= -->
+
+<section id="vision" class="bg-light">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Vision & Mission
+        </h2>
+
+
+        <div class="row g-4">
+
+
+            <!-- Vision -->
+
+            <div class="col-md-6">
+
+                <div class="card custom-card h-100">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="text-primary">
+                            <i>🎯</i> Vision
+                        </h3>
+
+                        <p>
+                            To provide quality technical education
+                            and develop competent Computer Engineering
+                            professionals capable of contributing to
+                            society and industry.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Mission -->
+
+            <div class="col-md-6">
+
+                <div class="card custom-card h-100">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="text-primary">
+                            <i>🚀</i> Mission
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Provide quality technical education.
+                            </li>
+
+                            <li>
+                                Develop technical and problem-solving skills.
+                            </li>
+
+                            <li>
+                                Encourage innovation and research.
+                            </li>
+
+                            <li>
+                                Meet changing requirements of society
+                                and industry.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- FACULTY -->
+<!-- ================================================= -->
+
+<section id="faculty">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Computer Engineering Faculty
+        </h2>
+
+
+        <div class="row g-4">
+
+
+            <!-- Faculty 1 -->
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100 text-center">
+
+                    <div class="card-body">
+
+                        <div class="faculty-icon">
+                            👨‍🏫
+                        </div>
+
+                        <h4 class="mt-3">
+                            Dr. Pinal J. Patel
+                        </h4>
+
+                        <p class="text-primary fw-bold">
+                            Associate Professor & Head
+                        </p>
+
+                        <p>
+                            <strong>Qualification:</strong>
+                            Ph.D.
+                        </p>
+
+                        <p>
+                            <strong>Interest:</strong>
+                            Cloud Computing, Machine Learning,
+                            Deep Learning
+                        </p>
+
+                        <p>
+                            pinal.patel@gecmodasa.ac.in
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Faculty 2 -->
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100 text-center">
+
+                    <div class="card-body">
+
+                        <div class="faculty-icon">
+                            👨‍💻
+                        </div>
+
+                        <h4 class="mt-3">
+                            Dr. Uttam G. Chauhan
+                        </h4>
+
+                        <p class="text-primary fw-bold">
+                            Associate Professor
+                        </p>
+
+                        <p>
+                            <strong>Qualification:</strong>
+                            Ph.D., M.E., B.E.
+                        </p>
+
+                        <p>
+                            <strong>Interest:</strong>
+                            NLP, Text Mining, Machine Learning,
+                            Deep Learning
+                        </p>
+
+                        <p>
+                            uttam.chauhan@gecmodasa.ac.in
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Faculty 3 -->
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100 text-center">
+
+                    <div class="card-body">
+
+                        <div class="faculty-icon">
+                            👨‍💻
+                        </div>
+
+                        <h4 class="mt-3">
+                            Dr. Rahul N. Vaza
+                        </h4>
+
+                        <p class="text-primary fw-bold">
+                            Assistant Professor
+                        </p>
+
+                        <p>
+                            <strong>Qualification:</strong>
+                            Ph.D., M.E., B.E.
+                        </p>
+
+                        <p>
+                            <strong>Interest:</strong>
+                            Computational Theory,
+                            Data Structures
+                        </p>
+
+                        <p>
+                            rahul.vaza@gecmodasa.ac.in
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Faculty 4 -->
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100 text-center">
+
+                    <div class="card-body">
+
+                        <div class="faculty-icon">
+                            👩‍🏫
+                        </div>
+
+                        <h4 class="mt-3">
+                            Prof. Rinkalben J. Prajapati
+                        </h4>
+
+                        <p class="text-primary fw-bold">
+                            Assistant Professor
+                        </p>
+
+                        <p>
+                            <strong>Qualification:</strong>
+                            M.Tech (CE)
+                        </p>
+
+                        <p>
+                            <strong>Interest:</strong>
+                            Data Mining
+                        </p>
+
+                        <p>
+                            rinkal10feb@gmail.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Faculty 5 -->
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100 text-center">
+
+                    <div class="card-body">
+
+                        <div class="faculty-icon">
+                            👩‍💻
+                        </div>
+
+                        <h4 class="mt-3">
+                            Prof. Mayureeben K. Rathva
+                        </h4>
+
+                        <p class="text-primary fw-bold">
+                            Assistant Professor
+                        </p>
+
+                        <p>
+                            <strong>Qualification:</strong>
+                            M.E. Computer Engineering
+                        </p>
+
+                        <p>
+                            <strong>Interest:</strong>
+                            Network Security
+                        </p>
+
+                        <p>
+                            mayurirathva@gmail.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Faculty 6 -->
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100 text-center">
+
+                    <div class="card-body">
+
+                        <div class="faculty-icon">
+                            👨‍💻
+                        </div>
+
+                        <h4 class="mt-3">
+                            Prof. Viral R. Patel
+                        </h4>
+
+                        <p class="text-primary fw-bold">
+                            Assistant Professor
+                        </p>
+
+                        <p>
+                            <strong>Qualification:</strong>
+                            M.Tech (Computer)
+                        </p>
+
+                        <p>
+                            <strong>Interest:</strong>
+                            Information Security, IoT,
+                            Computer Networks, Algorithms
+                        </p>
+
+                        <p>
+                            viral.patel@gecmodasa.ac.in
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Faculty 7 -->
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100 text-center">
+
+                    <div class="card-body">
+
+                        <div class="faculty-icon">
+                            👨‍🏫
+                        </div>
+
+                        <h4 class="mt-3">
+                            Prof. Shreyaskumar G. Patel
+                        </h4>
+
+                        <p class="text-primary fw-bold">
+                            Assistant Professor
+                        </p>
+
+                        <p>
+                            <strong>Qualification:</strong>
+                            M.E.
+                        </p>
+
+                        <p>
+                            <strong>Interest:</strong>
+                            Algorithms, Security
+                        </p>
+
+                        <p>
+                            shreyas.patel@gecmodasa.ac.in
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Faculty 8 -->
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100 text-center">
+
+                    <div class="card-body">
+
+                        <div class="faculty-icon">
+                            👨‍💻
+                        </div>
+
+                        <h4 class="mt-3">
+                            Prof. Pradeep Rohitbhai Gamit
+                        </h4>
+
+                        <p class="text-primary fw-bold">
+                            Assistant Professor
+                        </p>
+
+                        <p>
+                            <strong>Qualification:</strong>
+                            M.E. (CST), B.E. Computer Engineering
+                        </p>
+
+                        <p>
+                            <strong>Interest:</strong>
+                            Networking
+                        </p>
+
+                        <p>
+                            pradeep.gamit07@gmail.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- LABORATORIES -->
+<!-- ================================================= -->
+
+<section id="labs" class="bg-light">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Laboratories
+        </h2>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100">
+
+                    <div class="card-body text-center">
+
+                        <h3>
+                            💻
+                        </h3>
+
+                        <h4>
+                            Programming Lab
+                        </h4>
+
+                        <p>
+                            Programming practicals using C, C++,
+                            Java and Python.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100">
+
+                    <div class="card-body text-center">
+
+                        <h3>
+                            🌐
+                        </h3>
+
+                        <h4>
+                            Web Technology Lab
+                        </h4>
+
+                        <p>
+                            HTML, CSS, JavaScript, Bootstrap and
+                            modern web development technologies.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100">
+
+                    <div class="card-body text-center">
+
+                        <h3>
+                            🔐
+                        </h3>
+
+                        <h4>
+                            Networking & Security Lab
+                        </h4>
+
+                        <p>
+                            Computer networks, communication,
+                            network security and related practicals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100">
+
+                    <div class="card-body text-center">
+
+                        <h3>
+                            🗄️
+                        </h3>
+
+                        <h4>
+                            Database Lab
+                        </h4>
+
+                        <p>
+                            Database management, SQL and
+                            database application development.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100">
+
+                    <div class="card-body text-center">
+
+                        <h3>
+                            🤖
+                        </h3>
+
+                        <h4>
+                            AI & Machine Learning Lab
+                        </h4>
+
+                        <p>
+                            Practical learning in artificial
+                            intelligence and machine learning.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100">
+
+                    <div class="card-body text-center">
+
+                        <h3>
+                            ☁️
+                        </h3>
+
+                        <h4>
+                            Cloud Computing Lab
+                        </h4>
+
+                        <p>
+                            Cloud technologies, distributed
+                            systems and modern computing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- EVENTS & ACHIEVEMENTS -->
+<!-- ================================================= -->
+
+<section id="events">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Events & Achievements
+        </h2>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-primary">
+                            Technical Event
+                        </span>
+
+                        <h4 class="mt-3">
+                            Technical Quiz
+                        </h4>
+
+                        <p>
+                            Technical quiz activities encourage
+                            students to improve their technical
+                            knowledge and problem-solving skills.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-success">
+                            Student Activity
+                        </span>
+
+                        <h4 class="mt-3">
+                            Project Exhibition
+                        </h4>
+
+                        <p>
+                            Students showcase innovative projects
+                            based on software and emerging
+                            technologies.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card custom-card h-100">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-warning text-dark">
+                            College Event
+                        </span>
+
+                        <h4 class="mt-3">
+                            Technical Workshops
+                        </h4>
+
+                        <p>
+                            Workshops and expert sessions provide
+                            students with practical and industry
+                            oriented knowledge.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- CONTACT -->
+<!-- ================================================= -->
+
+<section id="contact" class="bg-light">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Contact Us
+        </h2>
+
+
+        <div class="row g-4">
+
+
+            <!-- Contact Details -->
+
+            <div class="col-md-5">
+
+                <div class="contact-box">
+
+                    <h3>
+                        Government Engineering College, Modasa
+                    </h3>
+
+                    <hr>
+
+                    <p>
+                        📍 Shamlaji Road,
+                        Modasa, District Aravalli,
+                        Gujarat - 383315
+                    </p>
+
+                    <p>
+                        📞 +91 2774 242 633 / 634
+                    </p>
+
+                    <p>
+                        ✉ gec-modasa-dte@gujarat.gov.in
+                    </p>
+
+                    <p>
+                        🕐 Monday - Friday:
+                        10:30 AM - 6:10 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+
+            <div class="col-md-7">
+
+                <div class="card custom-card">
+
+                    <div class="card-body p-4">
+
+                        <h4>
+                            Send Us a Message
+                        </h4>
+
+                        <form>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Name
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Enter your name"
+                                       required>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Email
+                                </label>
+
+                                <input type="email"
+                                       class="form-control"
+                                       placeholder="Enter your email"
+                                       required>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Subject
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Enter subject">
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Message
+                                </label>
+
+                                <textarea class="form-control"
+                                          rows="5"
+                                          placeholder="Enter your message">
+                                </textarea>
+
+                            </div>
+
+
+                            <button type="submit"
+                                    class="btn btn-primary">
+
+                                Submit
+
+                            </button>
+
+
+                            <button type="reset"
+                                    class="btn btn-secondary">
+
+                                Reset
+
+                            </button>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
+
+<footer>
+
+    <div class="container text-center">
+
+        <img src="logo.png"
+             alt="GEC Modasa"
+             width="60"
+             class="mb-2">
+
+        <h5>
+            Government Engineering College, Modasa
+        </h5>
+
+        <p>
+            Department of Computer Engineering
+        </p>
+
+        <hr>
+
+        <p class="mb-0">
+            © 2026 GEC Modasa | Computer Engineering Department
+        </p>
+
+        <p class="mb-0">
+            Designed using HTML, CSS & Bootstrap
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================================================= -->
+<!-- BOOTSTRAP JAVASCRIPT -->
+<!-- ================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>
